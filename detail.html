@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Varian Produk - Fresh Infused Water</title>
+  <meta name="description" content="Informasi detail komposisi buah asli, volume 500ml, manfaat kesegaran alami, dan harga Rp20.000 produk Fresh Infused Water.">
+  <link rel="icon" type="image/jpeg" href="assets/logo/logo.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fresh-green': '#8FAF78',
+            'sage-green': '#A8B89A',
+            'dark-green': '#294B35',
+            'lemon-yellow': '#F4D75E',
+            'strawberry-red': '#E98282',
+            'cream': '#FAF8F0'
+          },
+          fontFamily: {
+            sans: ['Poppins', '"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-tropical-pattern text-[#294B35] flex flex-col min-h-screen page-transition">
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- Animated Fruit Splash Page Loader -->
+  <div id="site-loader">
+    <div class="loader-fruit-icon flex flex-col items-center">
+      <img src="assets/logo/logo.jpg" alt="Logo Fresh Infused Water" class="w-16 h-16 rounded-full shadow-xl border-2 border-[#8FAF78] object-cover mb-3 animate-pulse">
+      <p class="text-xs font-black tracking-widest text-[#294B35] uppercase">
+        Fresh Infused Water
+      </p>
+    </div>
+  </div>
+
+  <!-- 1. TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-[#294B35] via-[#8FAF78] to-[#294B35] text-white text-xs py-2.5 px-4 text-center font-semibold tracking-wide flex items-center justify-center gap-2 shadow-sm">
+    <span class="inline-block w-2.5 h-2.5 rounded-full bg-[#F4D75E] animate-pulse"></span>
+    <span>🌿 Pesan Segar Setiap Hari via WhatsApp: </span>
+    <a href="#" data-biz-link="whatsapp" class="font-extrabold underline hover:text-[#F4D75E] transition-colors ml-1" data-biz="whatsapp">0813-8912-1407</a>
+    <span class="hidden md:inline mx-2 text-[#FAF8F0]">•</span>
+    <a href="https://s.shopee.co.id/80E5rqXJPH?share_channel_code=1" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1 font-bold text-[#F4D75E] hover:underline">
+      🛒 Tersedia di Shopee Official
+    </a>
+  </div>
+
+  <!-- 2. STICKY NAVBAR -->
+  <header class="sticky top-0 z-40 glass-header transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/logo/logo.jpg" alt="Fresh Infused Water Logo" class="h-12 w-12 rounded-full object-cover shadow-sm border border-[#8FAF78]/50 transition-transform group-hover:scale-105">
+        <span class="font-extrabold text-[#294B35] tracking-tight text-base sm:text-lg">Fresh Infused Water</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex items-center space-x-7 text-sm font-semibold text-[#294B35]">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="produk.html" class="nav-link">Katalog Produk</a>
+        <a href="detail.html" class="nav-link active">Detail Produk</a>
+        <a href="tentang.html" class="nav-link">Tentang Kami</a>
+        <a href="galeri.html" class="nav-link">Galeri</a>
+        <a href="kontak.html" class="nav-link">Kontak</a>
+      </div>
+
+      <!-- Header Action Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://s.shopee.co.id/80E5rqXJPH?share_channel_code=1" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 bg-[#FFF1ED] text-[#EE4D2D] hover:bg-[#EE4D2D] hover:text-white border border-[#FFD8CF] text-xs font-bold px-3.5 py-2 rounded-full transition-all hover:scale-105">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.5 7.5h-2.1c-.2-2.8-2.3-5-4.9-5s-4.7 2.2-4.9 5H5.5C4.7 7.5 4 8.2 4 9v11c0 .8.7 1.5 1.5 1.5h14c.8 0 1.5-.7 1.5-1.5V9c0-.8-.7-1.5-1.5-1.5zm-7-3.5c1.6 0 2.9 1.4 3 3H9.5c.1-1.6 1.4-3 3-3zm6 14.5H6.5v-9H8v2c0 .3.2.5.5.5s.5-.2.5-.5v-2h7v2c0 .3.2.5.5.5s.5-.2.5-.5v-2h1.5v9z"/></svg>
+          <span>Shopee</span>
+        </a>
+
+        <a href="#" data-biz-link="whatsapp" 
+           class="btn-primary-fresh inline-flex items-center gap-2 text-xs font-bold px-5 py-2.5 rounded-full transition-all active:scale-95 shadow-md">
+          <svg class="w-4 h-4 fill-current text-[#F4D75E]" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>Pesan Sekarang</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex md:hidden items-center">
+        <button id="mobile-menu-btn" type="button" class="text-[#294B35] hover:text-[#8FAF78] p-2 focus:outline-none" aria-label="Toggle Menu">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-[#A8B89A] px-6 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="index.html" class="block py-2 text-base font-semibold text-[#294B35] hover:text-[#8FAF78] border-b border-[#FAF8F0]">Beranda</a>
+      <a href="produk.html" class="block py-2 text-base font-semibold text-[#294B35] hover:text-[#8FAF78] border-b border-[#FAF8F0]">Katalog Produk</a>
+      <a href="detail.html" class="block py-2 text-base font-bold text-[#294B35] border-b border-[#FAF8F0]">Detail Produk</a>
+      <a href="tentang.html" class="block py-2 text-base font-semibold text-[#294B35] hover:text-[#8FAF78] border-b border-[#FAF8F0]">Tentang Kami</a>
+      <a href="galeri.html" class="block py-2 text-base font-semibold text-[#294B35] hover:text-[#8FAF78] border-b border-[#FAF8F0]">Galeri</a>
+      <a href="kontak.html" class="block py-2 text-base font-semibold text-[#294B35] hover:text-[#8FAF78] border-b border-[#FAF8F0]">Kontak &amp; Pemesanan</a>
+      <div class="pt-3 space-y-2">
+        <a href="#" data-biz-link="whatsapp" class="btn-primary-fresh w-full py-3 rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-md">
+          <svg class="w-4 h-4 fill-current text-[#F4D75E]" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>Pesan via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. BREADCRUMB & VARIANT SWITCHER SECTION -->
+  <section class="py-8 bg-[#FAF8F0] border-b border-[#A8B89A]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="flex items-center gap-2 text-xs font-semibold text-[#8FAF78]">
+          <a href="index.html" class="hover:underline">Beranda</a>
+          <span>/</span>
+          <a href="produk.html" class="hover:underline">Katalog Produk</a>
+          <span>/</span>
+          <span class="text-[#294B35] font-bold">Detail Varian</span>
+        </div>
+
+        <!-- Quick Switcher Label -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-[#8FAF78] uppercase tracking-wider">Pilih Varian:</span>
+          <div id="variant-switcher-container" class="flex flex-wrap gap-2">
+            <!-- Rendered by main.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MAIN DETAIL PRODUCT VIEW -->
+  <main class="flex-grow py-16 bg-white relative overflow-hidden" id="product-detail-view">
+    <!-- Floating Fruit Decorations around Product -->
+    <div class="absolute top-10 left-8 pointer-events-none floating-fruit-lemon hidden lg:block opacity-60 text-3xl">🍋</div>
+    <div class="absolute bottom-20 left-12 pointer-events-none floating-fruit-strawberry hidden lg:block opacity-60 text-3xl">🍓</div>
+    <div class="absolute top-20 right-10 pointer-events-none floating-fruit-mint hidden lg:block opacity-60 text-3xl">🌿</div>
+    <div class="absolute bottom-16 right-16 pointer-events-none floating-fruit-orange hidden lg:block opacity-60 text-3xl">🍊</div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: Bottle Image with Smooth Zoom-in & Water Splash Waves -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            
+            <!-- Water Ripple Waves Behind Bottle -->
+            <div class="water-ripple-ring"></div>
+            <div class="water-ripple-ring-2"></div>
+            
+            <div class="bottle-img-container p-6 shadow-2xl bg-gradient-to-tr from-[#FAF8F0] via-white to-[#F5F9F4] rounded-3xl border border-[#A8B89A]/50 relative overflow-hidden">
+              <img id="detail-bottle-img" 
+                   src="assets/images/mix-fruit.jpg" 
+                   alt="Botol Fresh Infused Water" 
+                   class="max-h-[500px] drop-shadow-2xl transition-all duration-500 transform hover:scale-105">
+            </div>
+
+            <!-- Volume pill below bottle -->
+            <div class="mt-4 text-center">
+              <span class="inline-flex items-center gap-2 text-xs font-black text-[#294B35] bg-[#FAF8F0] border border-[#A8B89A]/40 px-4 py-1.5 rounded-full shadow-xs">
+                <span>💧 Botol Praktis Food-Grade 500 ml</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Comprehensive Product Info -->
+        <div class="lg:col-span-7 space-y-7">
+          
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <span id="detail-badge" class="text-xs font-black bg-[#294B35] text-white px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                Signature Best Seller
+              </span>
+              <span id="detail-category" class="text-xs font-bold text-[#8FAF78] uppercase tracking-wider bg-[#FAF8F0] px-3 py-1 rounded-full border border-[#A8B89A]/40">
+                Signature
+              </span>
+            </div>
+
+            <h1 id="detail-name" class="text-3xl sm:text-5xl font-black text-[#294B35] tracking-tight">
+              Mix Fruit
+            </h1>
+
+            <div class="flex items-baseline gap-4 pt-1">
+              <span id="detail-price" class="text-3xl sm:text-4xl font-black text-[#294B35] bg-[#FAF8F0] px-5 py-1.5 rounded-2xl border-2 border-[#8FAF78]/50 shadow-sm inline-block">
+                Rp20.000
+              </span>
+              <span class="text-xs font-semibold text-[#8FAF78]">/ Botol Segel 500ml</span>
+            </div>
+          </div>
+
+          <!-- Description Rasa -->
+          <div class="space-y-2">
+            <h3 class="text-xs font-black uppercase tracking-wider text-[#8FAF78]">Deskripsi Cita Rasa</h3>
+            <p id="detail-desc" class="text-base text-[#4A5568] leading-relaxed">
+              Sensasi kesegaran multi-buah alami kaya vitamin C dan antioksidan untuk mendongkrak energimu seketika!
+            </p>
+          </div>
+
+          <!-- Komposisi Buah Asli -->
+          <div class="space-y-3">
+            <h3 class="text-xs font-black uppercase tracking-wider text-[#8FAF78]">Komposisi Buah Asli Pilihan</h3>
+            <div id="detail-ingredients" class="flex flex-wrap gap-2.5">
+              <!-- Rendered by main.js -->
+            </div>
+          </div>
+
+          <!-- Manfaat Kesehatan -->
+          <div class="space-y-3">
+            <h3 class="text-xs font-black uppercase tracking-wider text-[#8FAF78]">Keunggulan &amp; Manfaat Alami</h3>
+            <ul id="detail-benefits" class="space-y-2">
+              <!-- Rendered by main.js -->
+            </ul>
+          </div>
+
+          <!-- Interactive Action Buttons -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center gap-4 border-t border-[#FAF8F0]">
+            <!-- WhatsApp Order -->
+            <a id="detail-wa-btn" href="#" target="_blank" rel="noopener noreferrer"
+               class="btn-primary-fresh w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl text-sm font-extrabold shadow-xl transition-all">
+              <svg class="w-5 h-5 fill-current text-[#F4D75E]" viewBox="0 0 24 24"><path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.905.534 3.687 1.458 5.215L2.052 22l4.908-1.391a9.98 9.98 0 005.071 1.422h.004c5.535 0 10.031-4.495 10.031-10.031S17.566 2 12.031 2zm0 18.062a8.03 8.03 0 01-4.093-1.117l-.293-.174-3.045.864.862-2.969-.19-.304a8.04 8.04 0 01-1.242-4.331c0-4.444 3.618-8.062 8.062-8.062 4.444 0 8.062 3.618 8.062 8.062 0 4.444-3.618 8.062-8.062 8.062zm4.417-6.027c-.242-.121-1.432-.707-1.654-.787-.222-.081-.383-.121-.545.121-.161.242-.625.787-.766.948-.141.161-.282.181-.524.06a6.568 6.568 0 01-1.944-1.201 7.24 7.24 0 01-1.345-1.674c-.141-.242-.015-.373.106-.494.109-.109.242-.282.363-.423.121-.141.161-.242.242-.403.081-.161.04-.302-.02-.423-.06-.121-.545-1.312-.746-1.796-.196-.472-.395-.407-.545-.415l-.464-.008c-.161 0-.423.06-.645.302-.222.242-.847.828-.847 2.018s.867 2.341.988 2.502c.121.161 1.706 2.605 4.133 3.653.577.249 1.028.398 1.379.51.58.184 1.108.158 1.525.096.465-.07 1.432-.585 1.633-1.15.202-.565.202-1.049.141-1.15-.06-.101-.222-.161-.464-.282z"/></svg>
+              <span>Pesan Varian Ini (WhatsApp)</span>
+            </a>
+
+            <!-- Shopee Order -->
+            <a id="detail-shopee-btn" href="https://s.shopee.co.id/80E5rqXJPH?share_channel_code=1" target="_blank" rel="noopener noreferrer"
+               class="btn-shopee w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl text-sm font-extrabold shadow-xl transition-all">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.5 7.5h-2.1c-.2-2.8-2.3-5-4.9-5s-4.7 2.2-4.9 5H5.5C4.7 7.5 4 8.2 4 9v11c0 .8.7 1.5 1.5 1.5h14c.8 0 1.5-.7 1.5-1.5V9c0-.8-.7-1.5-1.5-1.5zm-7-3.5c1.6 0 2.9 1.4 3 3H9.5c.1-1.6 1.4-3 3-3zm6 14.5H6.5v-9H8v2c0 .3.2.5.5.5s.5-.2.5-.5v-2h7v2c0 .3.2.5.5.5s.5-.2.5-.5v-2h1.5v9z"/></svg>
+              <span>Kunjungi Shopee</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- 5. FOOTER WEBSITE (Dark Green Sesuai Prompt) -->
+  <footer class="bg-[#294B35] text-white pt-16 pb-8 border-t border-[#8FAF78]/30 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo/logo.jpg" alt="Fresh Infused Water Logo" class="h-12 w-12 rounded-full object-cover shadow-md border-2 border-[#8FAF78]">
+            <span class="font-black text-white text-base tracking-wide">Fresh Infused Water</span>
+          </div>
+          <p class="text-lg font-bold text-[#F4D75E] italic">
+            “Freshness in Every Sip!”
+          </p>
+          <p class="text-xs text-[#FAF8F0]/90 leading-relaxed">
+            “Kesegaran Alami dalam Setiap Tegukan.” Minuman infused water alami dengan potongan buah asli segar pilihan. Praktis, higienis, dan siap menemani seluruh aktivitas harianmu.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white tracking-wider uppercase border-b border-[#8FAF78]/40 pb-2">Halaman Navigasi</h4>
+          <ul class="space-y-2 text-xs text-[#FAF8F0]/90">
+            <li><a href="index.html" class="hover:text-[#F4D75E]">Beranda</a></li>
+            <li><a href="produk.html" class="hover:text-[#F4D75E]">Katalog Produk</a></li>
+            <li><a href="detail.html" class="hover:text-[#F4D75E] font-bold">Detail Produk</a></li>
+            <li><a href="tentang.html" class="hover:text-[#F4D75E]">Tentang Kami</a></li>
+            <li><a href="galeri.html" class="hover:text-[#F4D75E]">Galeri Foto</a></li>
+            <li><a href="kontak.html" class="hover:text-[#F4D75E]">Kontak &amp; Pemesanan</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white tracking-wider uppercase border-b border-[#8FAF78]/40 pb-2">6 Varian Resmi (Rp20.000)</h4>
+          <ul class="space-y-1.5 text-xs text-[#FAF8F0]/90">
+            <li><a href="detail.html?id=1" class="hover:text-[#F4D75E]">1. Mix Fruit (Signature)</a></li>
+            <li><a href="detail.html?id=2" class="hover:text-[#F4D75E]">2. Lychee Lime Mint</a></li>
+            <li><a href="detail.html?id=3" class="hover:text-[#F4D75E]">3. Pineapple Lemon</a></li>
+            <li><a href="detail.html?id=4" class="hover:text-[#F4D75E]">4. Apple Cinnamon</a></li>
+            <li><a href="detail.html?id=5" class="hover:text-[#F4D75E]">5. Mango Lime Mint</a></li>
+            <li><a href="detail.html?id=6" class="hover:text-[#F4D75E]">6. Blueberry Orange Lime</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white tracking-wider uppercase border-b border-[#8FAF78]/40 pb-2">Pemesanan Resmi</h4>
+          <div class="space-y-2.5 text-xs text-[#FAF8F0]/90">
+            <p><span class="font-bold text-[#F4D75E]">WhatsApp:</span> <a href="#" data-biz-link="whatsapp" class="hover:text-white underline">0813-8912-1407</a></p>
+            <p><span class="font-bold text-[#F4D75E]">Instagram:</span> <a href="https://www.instagram.com/freshinfused.id?psln=ajdyMmZ2aHJpY2Yy&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">@freshinfused.id</a></p>
+            <p><span class="font-bold text-[#F4D75E]">Shopee:</span> <a href="https://s.shopee.co.id/80E5rqXJPH?share_channel_code=1" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">Shopee Official</a></p>
+            <p><span class="font-bold text-[#F4D75E]">Facebook:</span> <a href="https://www.facebook.com/share/1FWF2DbE1Z/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">Facebook Marketplace</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#8FAF78]/30 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A8B89A]">
+        <p>&copy; 2026 Fresh Infused Water. Seluruh Hak Cipta Dilindungi.</p>
+        <p class="mt-2 sm:mt-0 font-medium">Interactive Tropical Fresh Experience</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
